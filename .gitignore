@@ -1,0 +1,11 @@
+/*.html
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+.vscode/
+*.sql
+*.tar.gz
+*.zip
+vendor/
+.wp-env.override.json

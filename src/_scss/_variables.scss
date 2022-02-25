@@ -1,0 +1,65 @@
+$xs-max: 575.98px;
+$sm-max: 767.98px;
+$md-max: 991.98px;
+$lg-max: 1199.98px;
+
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+$shadow-primary: 0 0 5px 0 rgba(0, 0, 0, 12%);
+$shadow-link: 0 2px 10px 0 rgba(0, 0, 0, 12%);
+$shadow-hover: 0 0 5px 0 rgba(0, 0, 0, 12%);
+$roboto-font-family: "Roboto", sans-serif;
+$vk_post_imgOuter_singleTermLabel-padding: 5px;
+
+@mixin left-right-center($top: 0){
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);  
+}
+@mixin btn( $font-size:inherit ){
+    border-radius:var(--vk-size-radius-btn-primary);
+}
+@mixin shadow-primary{
+    box-shadow: $shadow-primary;
+    transition: all 0.3s ease 0s;
+}
+@mixin shadow-link{
+    box-shadow: $shadow-link;
+    transition: all 0.3s ease 0s;
+}
+@mixin shadow-hover{
+    box-shadow: $shadow-hover;
+    transform: translateY(0.1875em);
+}
+@mixin label{
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    min-width: 110px;
+    //管理画面で余計なmarginが入るので追加
+    margin-top:0;
+}
+
+@mixin bg-translate-common {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+// 注意 : PHPなどでheadなどに直接出力しないと Tree Shaking でふっとばされる為、修正する場合はfunctions.phpも修正すること
+
+// CSS 変数はベクトル側で追加しているものだとわかるように --vk のプリフィックスをつける
+// CSS 変数を使う理由は大きく
+// カスタマイザなどで数値を変更する場合
+// ユーザーがCSS変数を上書きして一括調整するのが楽になるように
+:root {
+    --vk-size-radius-btn-primary:100px;
+}

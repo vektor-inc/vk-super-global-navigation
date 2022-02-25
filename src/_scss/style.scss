@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/**
+* public page css
+* Origin III のSCSSファイルを参考の独自に作成してください
+*/
+@import "variables";
+
+//スーパーグローバルナビゲーション
+.vksgn{
+	&-navigation {
+		background: #333;
+
+		&,
+		a{
+			color: #fff;
+		}
+
+		ul {
+			list-style: none;
+		}
+	}
+	
+	&-sub {
+		// display: none;
+		background: #444;
+	}
+
+}
