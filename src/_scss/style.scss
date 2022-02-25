@@ -9,7 +9,8 @@
 //スーパーグローバルナビゲーション
 .vksgn{
 	&-navigation {
-		background: #333;
+		background: #292929;
+		 position: relative;
 
 		&,
 		a{
@@ -21,8 +22,72 @@
 		}
 	}
 	
+	&-main {
+		margin: 0;
+		padding: 1rem 0;
+		text-align: center;
+		flex-wrap: nowrap;
+		display: -webkit-flex !important; // ensure .menu is visible on desktop version
+		display: flex !important; // ensure .menu is visible on desktop version
+
+		> li {
+			width: calc( 100% / 5 );
+			text-align: center;
+			margin: 0;
+
+			a {
+				display: block;
+				padding: 0.6rem 0;
+			}
+
+			&:not(:first-child) {
+				> a {
+					border-left: solid 1px #aaa;
+				}
+			}
+
+			&:hover .vksgn-sub {
+				display: block !important;
+				margin: 0;
+				padding: 1rem;
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				width: 100vw;
+				z-index: 100;
+
+				&-title {
+					padding: 1rem 0 0;
+				}
+
+				&-nav{
+					margin: 0;
+					padding: 0;
+					text-align: center;
+					flex-wrap: nowrap;
+					display: -webkit-flex !important; // ensure .menu is visible on desktop version
+					display: flex !important; // ensure .menu is visible on desktop version
+
+					li {
+						margin:  0;
+						padding: 0;
+						position: relative;
+						width: calc( 100% / 4 );
+						text-align: center;
+
+						a {
+							display: block;
+							padding: 0.6rem 0;
+							border: solid 1px #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	&-sub {
-		// display: none;
+		display: none;
 		background: #444;
 	}
 

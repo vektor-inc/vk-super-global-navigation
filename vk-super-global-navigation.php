@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:     VK Super Global Navigation
- * Plugin URI:      https://github.com/vektor-inc/vk-super-global-navigation
- * Description:     ベクトルオフィシャルサイト用のスーパーグローバルメニューです。
- *  * Author:            Vektor,Inc.
+ * Plugin Name:       VK Super Global Navigation
+ * Plugin URI:        https://github.com/vektor-inc/vk-super-global-navigation
+ * Description:       ベクトルオフィシャルサイト用のスーパーグローバルメニューです。
+ *  * Author:         Vektor,Inc.
  * Author URI:        https://www.vektor-inc.co.jp/
  * Version:           0.0.1
  * Text Domain:       vk-super-global-navigation
@@ -46,7 +46,7 @@ class VKSGN_Active {
 	*/
 	static function add_style() {
 		$filename = plugin_dir_url( __FILE__ ) . 'build/css/style.css';
-		wp_enqueue_style( 'infinite-timeline', $filename, false, '0.0.1' );
+		wp_enqueue_style( 'vk-super-global-navigation', $filename, false, '0.0.1' );
 	}
 }
 $vk_super_global_navigation = new VKSGN_Active();
