@@ -8,9 +8,15 @@
 
 //スーパーグローバルナビゲーション
 .vksgn{
+
 	&-navigation {
-		background: #292929;
-		 position: relative;
+		background: #333;
+		font-size: .8rem;
+		position: relative;
+
+		@media (min-width: $md-min) {
+			font-size: inherit;
+		}
 
 		&,
 		a{
@@ -24,7 +30,7 @@
 	
 	&-main {
 		margin: 0;
-		padding: 1rem 0;
+		padding: 0;
 		text-align: center;
 		flex-wrap: nowrap;
 		display: -webkit-flex !important; // ensure .menu is visible on desktop version
@@ -34,52 +40,53 @@
 			width: calc( 100% / 5 );
 			text-align: center;
 			margin: 0;
+			padding: 1rem 0;
 
-			a {
+
+			> a {
 				display: block;
 				padding: 0.6rem 0;
+				@media (min-width: $md-min) {
+					font-size: inherit;
+				}
 			}
 
 			&:not(:first-child) {
 				> a {
-					border-left: solid 1px #aaa;
+					border-left: solid 1px #999;
 				}
 			}
 
-			&:hover .vksgn-sub {
-				display: block !important;
-				margin: 0;
-				padding: 1rem;
-				position: absolute;
-				bottom: 100%;
-				left: 0;
-				width: 100vw;
-				z-index: 100;
-
-				&-title {
-					padding: 1rem 0 0;
+			&:hover {
+				.vksgn-sub {
+					bottom: 100%;
+					display: block;
 				}
+			}
+		}
 
-				&-nav{
-					margin: 0;
-					padding: 0;
-					text-align: center;
-					flex-wrap: nowrap;
-					display: -webkit-flex !important; // ensure .menu is visible on desktop version
-					display: flex !important; // ensure .menu is visible on desktop version
+		.fas,
+		.far,
+		.fab {
+			display: block;
+			margin: 0 0 4px 0;
 
-					li {
-						margin:  0;
-						padding: 0;
-						position: relative;
-						width: calc( 100% / 4 );
-						text-align: center;
+			@media (min-width: $md-min) {
+				display: inline;
+				margin: 0 .4rem 0 0;
+			}
+		}
 
-						a {
-							display: block;
-							padding: 0.6rem 0;
-							border: solid 1px #fff;
-						}
+		&-join {
+			.vksgn-sub{
+				li {
+					width: calc( 100% / 3 );
+
+					border-right: solid 1px #fff;
+
+					&:nth-child(1),
+					&:nth-child(2){
+						border-bottom: none;
 					}
 				}
 			}
@@ -87,8 +94,90 @@
 	}
 
 	&-sub {
+		margin: 0;
+		padding: 1rem;
+		position: absolute;
+		left: 0;
+		bottom: 0;
 		display: none;
-		background: #444;
-	}
+		width: calc(100vw - calc(100vw - 100%));
+		background: #454545;
+		z-index: 100;
+		transition: all .3s ease-out;
 
+		@media (min-width: $md-min) {
+			padding: 1.6rem;
+		}
+
+		&-title {
+			a {
+				display: block;
+				padding-top: 1rem;
+		
+				@media (min-width: $md-min) {
+					padding-top: 1.6rem;
+				}		
+			}
+
+			.fas,
+			.far,
+			.fab {
+				display: inline;
+				margin-left: .4rem;
+			}
+		}
+
+		&-nav{
+			margin: 0;
+			padding: 0;
+			border: solid 1px #fff;
+			text-align: center;
+			display: -webkit-flex;
+			display: flex;
+			flex-wrap: wrap;
+
+			li {
+				margin:  0;
+				padding: 0;
+				position: relative;
+				width: calc( 100% / 2 );
+				text-align: center;
+
+				&:nth-child(1),
+				&:nth-child(2){
+					border-bottom: solid 1px #fff;					
+				}
+
+				&:nth-child(odd) {
+					border-right: solid 1px #fff;					
+				}
+				
+				@media (min-width: $md-min) {
+					width: calc( 100% / 4 );
+
+					&:nth-child(1),
+					&:nth-child(2){
+						border-bottom: none;
+					}
+
+					&:nth-child(even) {
+						border-right: solid 1px #fff;					
+					}
+				}
+
+				a {
+					display: block;
+					padding: 0.6rem 0;
+				}
+
+				br{
+					@media (min-width: $md-min) {
+						display: none;
+						margin-right: .4rem;
+					}
+				}
+
+			}
+		}
+	}
 }
