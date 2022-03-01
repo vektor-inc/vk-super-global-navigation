@@ -59,8 +59,12 @@
 
 			&:hover {
 				.vksgn-sub {
-					bottom: 100%;
-					display: block;
+					height: auto;
+					padding: 1rem;
+
+					@media (min-width: $md-min) {
+						padding: 1.6rem;
+					}
 				}
 			}
 		}
@@ -95,19 +99,21 @@
 
 	&-sub {
 		margin: 0;
-		padding: 1rem;
+		padding: 0 1rem;
 		position: absolute;
 		left: 0;
-		bottom: 0;
-		display: none;
+		bottom: 100%;
+		height: 0;
 		width: calc(100vw - calc(100vw - 100%));
 		background: #454545;
+		overflow: hidden;
 		z-index: 100;
 		transition: all .3s ease-out;
 
 		@media (min-width: $md-min) {
-			padding: 1.6rem;
+			padding: 0 1.6rem;
 		}
+
 
 		&-title {
 			a {
