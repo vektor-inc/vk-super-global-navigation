@@ -41,9 +41,12 @@
 			padding: 1rem 0;
 
 
-			> a {
+			> a,
+			&-label {
 				display: block;
 				padding: 0.6rem 0;
+				cursor: pointer;
+
 				@media (min-width: $md-min) {
 					font-size: inherit;
 				}
@@ -55,12 +58,15 @@
 				}
 			}
 
-			&:hover {
-				.vksgn-sub {
-					height: auto;
-					visibility: visible;
-					opacity: 1;
-				}
+			.ksgn-has-sub-check {
+				display: none;
+			}
+
+//			&:hover .vksgn-sub,
+			.ksgn-has-sub-check:checked + .vksgn-primary-item-label + .vksgn-sub {
+				height: auto;
+				visibility: visible;
+				opacity: 1;
 			}
 		}
 
@@ -83,6 +89,7 @@
 			.vk-icon {
 				width: 2rem;
 				height: 2rem;
+				vertical-align: middle;
 				background: url("../images/vk-icon.svg") no-repeat center center/contain;
 
 				@media (min-width: $md-min) {

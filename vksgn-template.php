@@ -1,6 +1,8 @@
 <div class="vksgn-navigation">
 	<ul class="vksgn-primary">
-		<li class="vksgn-primary-item product"><a href="#"><i class="fas fa-glasses"></i>製品を見る</a>
+		<li class="vksgn-primary-item product">
+			<input id="vksgn-primary-item-product" class="ksgn-has-sub-check" type="checkbox">
+			<label 	class="vksgn-primary-item-label" for="vksgn-primary-item-product"><i class="fas fa-glasses"></i>製品を見る</label>
 			<div class="vksgn-sub">
 				<ul class="vksgn-sub-items">
 					<li class="vksgn-sub-item"><a href="https://lightning.vektor-inc.co.jp/"><i class="fas fa-bolt"></i>Lightning</a></li>
@@ -13,7 +15,9 @@
 		</li>
 		<li class="vksgn-primary-item"><a href="https://vws.vektor-inc.co.jp/"><i class="fas fa-shopping-cart"></i>購入する</a></li>
 		<li class="vksgn-primary-item"><a href="https://showcase.vektor-inc.co.jp/"><i class="fas fa-desktop"></i>学習する</a></li>
-		<li class="vksgn-primary-item join"><a href="#"><i class="fas fa-users"></i>参加する</a>
+		<li class="vksgn-primary-item join">
+			<input id="vksgn-primary-item-join" class="ksgn-has-sub-check" type="checkbox">
+			<label 	class="vksgn-primary-item-label" for="vksgn-primary-item-join"><i class="fas fa-users"></i>参加する</label>
 			<div class="vksgn-sub">
 				<ul class="vksgn-sub-items">
 					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/"><i class="fas fa-chalkboard-teacher"></i>VWS<br>
