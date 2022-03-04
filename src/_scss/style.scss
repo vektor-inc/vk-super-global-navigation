@@ -2,17 +2,16 @@
 
 /**
 * public page css
-* Origin III のSCSSファイルを参考の独自に作成してください
 */
 @import "variables";
 
 //スーパーグローバルナビゲーション
 .vksgn{
-
 	&-navigation {
 		background: #333;
 		font-size: .8rem;
 		position: relative;
+		 @include pie-clearfix;
 
 		@media (min-width: $md-min) {
 			font-size: inherit;
@@ -28,15 +27,14 @@
 		}
 	}
 	
-	&-main {
+	&-primary {
 		margin: 0;
 		padding: 0;
 		text-align: center;
 		flex-wrap: nowrap;
-		display: -webkit-flex !important; // ensure .menu is visible on desktop version
-		display: flex !important; // ensure .menu is visible on desktop version
+		@include display-flex;
 
-		> li {
+		&-item {
 			width: calc( 100% / 5 );
 			text-align: center;
 			margin: 0;
@@ -68,27 +66,40 @@
 
 		.fas,
 		.far,
-		.fab {
+		.fab,
+		.vk-icon {
 			display: block;
-			margin: 0 0 4px 0;
+			margin: 0 auto 5px;
+			font-size: 1.8rem;
 
 			@media (min-width: $md-min) {
-				display: inline;
+				display: inline-block;
 				margin: 0 .4rem 0 0;
+				font-size: 1.1rem;
 			}
 		}
+		
+		.product {
+			.vk-icon {
+				width: 2rem;
+				height: 2rem;
+				background: url("../images/vk-icon.svg") no-repeat center center/contain;
 
-		&-join {
-			.vksgn-sub{
-				li {
-					width: calc( 100% / 3 );
+				@media (min-width: $md-min) {
+					width: 1.1rem;
+					height: 1.1rem;
+				}
+			}
+		}
+	
+		.join {
+			.vksgn-sub-item {
+				width: calc( 100% / 3 );
+				border-right: solid 1px #fff;
 
-					border-right: solid 1px #fff;
-
-					&:nth-child(1),
-					&:nth-child(2){
-						border-bottom: none;
-					}
+				&:nth-child(1),
+				&:nth-child(2){
+					border-bottom: none;
 				}
 			}
 		}
@@ -103,21 +114,22 @@
 		height: 0;
 		width: calc(100vw - calc(100vw - 100%));
 		background: #454545;
+		font-size: .9rem;
 		opacity: 0;
 		visibility: hidden;
 		overflow: hidden;
-		z-index: 100;
+		z-index: 100; // for .card-intext .card-intext-inner .vk_post_body in Lightning
 		transition: all .2s ease-out;
 
 		@media (min-width: $md-min) {
 			padding: 1.6rem;
 		}
 
-
 		&-title {
 			a {
 				display: block;
 				padding-top: 1rem;
+				text-decoration: underline;
 		
 				@media (min-width: $md-min) {
 					padding-top: 1.6rem;
@@ -127,61 +139,60 @@
 			.fas,
 			.far,
 			.fab {
-				display: inline;
+				display: inline-block;
 				margin-left: .4rem;
+				font-size: 1rem;
 			}
 		}
 
-		&-nav{
+		&-items{
 			margin: 0;
 			padding: 0;
 			border: solid 1px #fff;
 			text-align: center;
-			display: -webkit-flex;
-			display: flex;
 			flex-wrap: wrap;
+			@include display-flex;
+		}
 
-			li {
-				margin:  0;
-				padding: 0;
-				position: relative;
-				width: calc( 100% / 2 );
-				text-align: center;
+		&-item {
+			margin:  0;
+			padding: 0;
+			position: relative;
+			width: calc( 100% / 2 );
+			text-align: center;
+
+			&:nth-child(1),
+			&:nth-child(2){
+				border-bottom: solid 1px #fff;					
+			}
+
+			&:nth-child(odd) {
+				border-right: solid 1px #fff;					
+			}
+			
+			@media (min-width: $md-min) {
+				width: calc( 100% / 4 );
 
 				&:nth-child(1),
 				&:nth-child(2){
-					border-bottom: solid 1px #fff;					
+					border-bottom: none;
 				}
 
-				&:nth-child(odd) {
+				&:nth-child(even) {
 					border-right: solid 1px #fff;					
 				}
-				
+			}
+
+			a {
+				display: block;
+				padding: 1rem 0;
+			}
+
+			br{
 				@media (min-width: $md-min) {
-					width: calc( 100% / 4 );
-
-					&:nth-child(1),
-					&:nth-child(2){
-						border-bottom: none;
-					}
-
-					&:nth-child(even) {
-						border-right: solid 1px #fff;					
-					}
+					display: none;
+					margin-right: .4rem;
 				}
-
-				a {
-					display: block;
-					padding: 0.6rem 0;
-				}
-
-				br{
-					@media (min-width: $md-min) {
-						display: none;
-						margin-right: .4rem;
-					}
-				}
-
 			}
 		}
 	}
