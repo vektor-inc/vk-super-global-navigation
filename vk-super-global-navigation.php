@@ -47,14 +47,14 @@ class VKSGN_Active {
 	*/
 	static function add_style() {
 		$filename = plugin_dir_url( __FILE__ ) . 'build/css/style.css';
-		wp_enqueue_style( 'vk-super-global-navigation', $filename, false, '0.0.1' );
+		wp_enqueue_style( 'vk-super-global-navigation', $filename, false, '1.0.0' );
 	}
 
 	/**
 	* Add script file
 	*/
 	function add_script() {
-		$filename = plugins_url( dirname( '/' .plugin_basename( __FILE__ ) ) ).'/build/js/script.js';
+		$filename = plugin_dir_url( __FILE__ ).'build/js/script.js';
 		wp_enqueue_script( 'vk-super-global-navigation', $filename, array( 'jquery' ), '1.0.0' );
 	}
 }
