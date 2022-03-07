@@ -31,6 +31,7 @@ class VKSGN_Active {
 		load_plugin_textdomain( 'vk-super-global-navigation', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 		add_filter( 'wp_footer', array( &$this, 'add_navigation' ));
 		add_action( 'wp_print_styles', array( &$this, 'add_style' ));
+		add_action( 'wp_enqueue_scripts', array( &$this, 'add_script' ) );
 	}
 
 	/**
@@ -47,6 +48,14 @@ class VKSGN_Active {
 	static function add_style() {
 		$filename = plugin_dir_url( __FILE__ ) . 'build/css/style.css';
 		wp_enqueue_style( 'vk-super-global-navigation', $filename, false, '0.0.1' );
+	}
+
+	/**
+	* Add script file
+	*/
+	function add_script() {
+		$filename = plugins_url( dirname( '/' .plugin_basename( __FILE__ ) ) ).'/build/js/script.js';
+		wp_enqueue_script( 'vk-super-global-navigation', $filename, array( 'jquery' ), '1.0.0' );
 	}
 }
 $vk_super_global_navigation = new VKSGN_Active();

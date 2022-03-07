@@ -25,6 +25,13 @@
 		ul {
 			list-style: none;
 		}
+
+		&.is_mobile .vksgn-primary-item.open .vksgn-sub,
+		&:not(.is_mobile) .vksgn-primary-item:hover .vksgn-sub{
+				height: auto;
+				visibility: visible;
+				opacity: 1;
+			}
 	}
 	
 	&-primary {
@@ -42,7 +49,7 @@
 
 
 			> a,
-			&-label {
+			> span {
 				display: block;
 				padding: 0.6rem 0;
 				cursor: pointer;
@@ -58,15 +65,8 @@
 				}
 			}
 
-			.ksgn-has-sub-check {
+			.ksgn-has-sub {
 				display: none;
-			}
-
-//			&:hover .vksgn-sub,
-			.ksgn-has-sub-check:checked + .vksgn-primary-item-label + .vksgn-sub {
-				height: auto;
-				visibility: visible;
-				opacity: 1;
 			}
 		}
 
