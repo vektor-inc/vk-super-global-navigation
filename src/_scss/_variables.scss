@@ -1,0 +1,41 @@
+$xs-max: 575.98px;
+$sm-max: 767.98px;
+$md-max: 991.98px;
+$lg-max: 1199.98px;
+
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+@mixin opacity( $opacity ) {
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity= $opacity *100 );
+	opacity: $opacity;
+}
+
+@mixin clearfix() {
+	overflow: hidden;
+	*zoom: 1;
+}
+	
+@mixin pie-clearfix() {
+	*zoom: 1;
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin hide-text(){
+	text-indent: -119988px;
+	overflow: hidden;
+	text-align: left;
+}
+
+@mixin display-flex(){
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}

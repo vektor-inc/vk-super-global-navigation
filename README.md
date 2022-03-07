@@ -31,6 +31,4 @@ $ gulp dist
 ```
 
 で出力できます。
-出力先のディレクトリは gulp.js で指定していますので、プラグインのディレクトリ名に変更してください。# vk-super-global-navigation
-# vk-super-global-navigation
-# vk-super-global-navigation
+出力先のディレクトリは gulp.js で指定していますので、プラグインのディレクトリ名に変更してください。

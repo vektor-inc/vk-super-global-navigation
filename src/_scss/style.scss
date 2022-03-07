@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/**
+* public page css
+*/
+@import "variables";
+
+//スーパーグローバルナビゲーション
+.vksgn{
+	&-navigation {
+		background: #333;
+		font-size: .8rem;
+		position: relative;
+		 @include pie-clearfix;
+
+		@media (min-width: $md-min) {
+			font-size: inherit;
+		}
+
+		&,
+		a{
+			color: #fff;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		&.is_mobile .vksgn-primary-item.open .vksgn-sub,
+		&:not(.is_mobile) .vksgn-primary-item:hover .vksgn-sub{
+				height: auto;
+				visibility: visible;
+				opacity: 1;
+			}
+	}
+	
+	&-primary {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		flex-wrap: nowrap;
+		@include display-flex;
+
+		&-item {
+			width: calc( 100% / 5 );
+			text-align: center;
+			margin: 0;
+			padding: 1rem 0;
+
+
+			> a,
+			> span {
+				display: block;
+				padding: 0.6rem 0;
+				cursor: pointer;
+
+				@media (min-width: $md-min) {
+					font-size: inherit;
+				}
+			}
+
+			&:not(:first-child) {
+				> a {
+					border-left: solid 1px #999;
+				}
+			}
+
+			.ksgn-has-sub {
+				display: none;
+			}
+		}
+
+		.fas,
+		.far,
+		.fab,
+		.vk-icon {
+			display: block;
+			margin: 0 auto 5px;
+			font-size: 1.8rem;
+
+			@media (min-width: $md-min) {
+				display: inline-block;
+				margin: 0 .4rem 0 0;
+				font-size: 1.1rem;
+			}
+		}
+		
+		.product {
+			.vk-icon {
+				width: 2rem;
+				height: 2rem;
+				vertical-align: middle;
+				background: url("../images/vk-icon.svg") no-repeat center center/contain;
+
+				@media (min-width: $md-min) {
+					width: 1.1rem;
+					height: 1.1rem;
+				}
+			}
+		}
+	
+		.join {
+			.vksgn-sub-item {
+				width: calc( 100% / 3 );
+				border-right: solid 1px #fff;
+
+				&:nth-child(1),
+				&:nth-child(2){
+					border-bottom: none;
+				}
+			}
+		}
+	}
+
+	&-sub {
+		margin: 0;
+		padding: 1rem;
+		position: absolute;
+		left: 0;
+		bottom: 100%;
+		height: 0;
+		width: calc(100vw - calc(100vw - 100%));
+		background: #454545;
+		font-size: .9rem;
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		z-index: 100; // for .card-intext .card-intext-inner .vk_post_body in Lightning
+		transition: all .2s ease-out;
+
+		@media (min-width: $md-min) {
+			padding: 1.6rem;
+		}
+
+		&-title {
+			a {
+				display: block;
+				padding-top: 1rem;
+				text-decoration: underline;
+		
+				@media (min-width: $md-min) {
+					padding-top: 1.6rem;
+				}		
+			}
+
+			.fas,
+			.far,
+			.fab {
+				display: inline-block;
+				margin-left: .4rem;
+				font-size: 1rem;
+			}
+		}
+
+		&-items{
+			margin: 0;
+			padding: 0;
+			border: solid 1px #fff;
+			text-align: center;
+			flex-wrap: wrap;
+			@include display-flex;
+		}
+
+		&-item {
+			margin:  0;
+			padding: 0;
+			position: relative;
+			width: calc( 100% / 2 );
+			text-align: center;
+
+			&:nth-child(1),
+			&:nth-child(2){
+				border-bottom: solid 1px #fff;					
+			}
+
+			&:nth-child(odd) {
+				border-right: solid 1px #fff;					
+			}
+			
+			@media (min-width: $md-min) {
+				width: calc( 100% / 4 );
+
+				&:nth-child(1),
+				&:nth-child(2){
+					border-bottom: none;
+				}
+
+				&:nth-child(even) {
+					border-right: solid 1px #fff;					
+				}
+			}
+
+			a {
+				display: block;
+				padding: 1rem 0;
+			}
+
+			br{
+				@media (min-width: $md-min) {
+					display: none;
+					margin-right: .4rem;
+				}
+			}
+		}
+	}
+}
