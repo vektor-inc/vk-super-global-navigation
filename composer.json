@@ -1,0 +1,26 @@
+{
+	"name": "vektor-inc/vk-super-global-navigation",
+	"description": "VK footer menu for Vektor official site",
+	"type": "project",
+	"require-dev": {
+		"sirbrillig/phpcs-variable-analysis": "^2.8",
+		"wp-phpunit/wp-phpunit": "^5.4",
+		"vektor-inc/vk-wp-unit-test-tools": "^0.10.0",
+		"squizlabs/php_codesniffer": "*",
+		"dealerdirect/phpcodesniffer-composer-installer": "*",
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"wp-coding-standards/wpcs": "*"
+	},
+	"license": "gpl",
+	"authors": [
+		{
+			"name": "vektor,inc.",
+			"email": "info@vektor-inc.co.jp"
+		}
+	],
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
