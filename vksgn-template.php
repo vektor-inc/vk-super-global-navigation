@@ -15,7 +15,7 @@
 			</div>
 		</li>
 		<li class="vksgn-primary-item"><a href="https://vws.vektor-inc.co.jp/"><i class="fas fa-shopping-cart"></i>購入する</a></li>
-		<li class="vksgn-primary-item"><a href="https://showcase.vektor-inc.co.jp/"><i class="fas fa-desktop"></i>学習する</a></li>
+		<li class="vksgn-primary-item"><a href="https://training.vektor-inc.co.jp/"><i class="fas fa-desktop"></i>学習する</a></li>
 		<li class="vksgn-primary-item join">
 			<span><i class="fas fa-users"></i>参加する</span>
 			<div class="vksgn-sub">
