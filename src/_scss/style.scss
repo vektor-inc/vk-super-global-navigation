@@ -6,7 +6,7 @@
 @import "variables";
 
 //スーパーグローバルナビゲーション
-.vksgn{
+.vksgn {
 	&-navigation {
 		background: #333;
 		font-size: .8rem;
@@ -18,7 +18,7 @@
 		}
 
 		&,
-		a{
+		a {
 			color: #fff;
 		}
 
@@ -58,7 +58,9 @@
 				cursor: pointer;
 
 				@media (min-width: $md-min) {
-					font-size: inherit;
+					@include display-flex();
+					@include flex-justify-center();
+					@include  flex-center();
 				}
 			}
 
@@ -84,8 +86,7 @@
 
 			@media (min-width: $md-min) {
 				display: inline-block;
-				margin: 0 .4rem 0 0;
-				font-size: 1.1rem;
+				margin: 0 1rem 0 0;
 			}
 		}
 		
@@ -97,8 +98,8 @@
 				background: url("../images/vk-icon.svg") no-repeat center center/contain;
 
 				@media (min-width: $md-min) {
-					width: 1.1rem;
-					height: 1.1rem;
+					width: 1.8rem;
+					height: 1.8rem;
 				}
 			}
 		}
@@ -106,8 +107,6 @@
 		.join {
 			.vksgn-sub-item {
 				width: calc( 100% / 3 );
-				border: solid 1px #fff;
-				margin: 0 0 -1px -1px;
 			}
 		}
 	}
@@ -147,28 +146,31 @@
 			.far,
 			.fab {
 				display: inline-block;
-				margin-left: .4rem;
+				margin-left: 1rem;
 				font-size: 1rem;
 			}
 		}
 
-		&-items{
-			margin: 0;
+		&-items {
+			margin: 0 0 0 1px;
 			padding: 0;
 			text-align: center;
+			border: solid 1px #fff;
+			border-radius: 5px;
+			overflow: hidden;
 			flex-wrap: wrap;
 			@include display-flex;
 		}
 
 		&-item {
-			margin:  0;
+			margin: 0 0 -1px -1px;
 			padding: 0;
 			position: relative;
 			width: calc( 100% / 2 );
 			text-align: center;
-			border: solid 1px #fff;
-			margin: 0 0 -1px -1px;
-
+			border-left: solid 1px #fff;
+			border-bottom: solid 1px #fff;
+			
 			&:hover {
 				background-color: #333;
 			}
@@ -180,9 +182,15 @@
 			a {
 				display: block;
 				padding: 1rem 0;
+
+				@media (min-width: $md-min) {
+					@include display-flex();
+					@include flex-justify-center();
+					@include  flex-center();
+				}
 			}
 
-			br{
+			br {
 				@media (min-width: $md-min) {
 					display: none;
 					margin-right: .4rem;
@@ -190,4 +198,13 @@
 			}
 		}
 	}
+}
+
+/**
+* move page top button in ExUnit
+*/
+
+.page_top_btn {
+	bottom: 90px;
+	z-index: 99;
 }
