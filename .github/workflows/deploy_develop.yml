@@ -34,8 +34,7 @@ jobs:
         run: npm run build
       - name: dist
         run: npm run dist
-
-      - name: Deploy to test server [ Deprecated ]
+      - name: rsync deployments
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: -avzr
