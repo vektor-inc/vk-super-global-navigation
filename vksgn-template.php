@@ -30,6 +30,6 @@
 				<div class="vksgn-sub-title"><a href="#"> オンラインコミュニティ一覧<i class="fas fa-chevron-right"></i></a></div>
 			</div>
 		</li>
-		<li class="vksgn-primary-item"><a href="https://showcase.vektor-inc.co.jp/archives/author/wpmaster"><i class="fas fa-handshake"></i>実例を見る</a></li>
+		<li class="vksgn-primary-item"><a href="https://showcase.vektor-inc.co.jp/archives/author/wpmaster"><i class="fas fa-share-square"></i>実例を見る</a></li>
 	</ul>
 </div>

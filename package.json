@@ -4,7 +4,7 @@
 	"description": "The global navigatiom on Vektor,Inc. official site",
 	"author": "Vektor,Inc",
 	"license": "MIT",
-	"main": "build/index.js",
+	"main": "Gruntfile.js",
 	"scripts": {
 		"start": "npm run build && npx wp-env start",
 		"readme": "grunt readme",
