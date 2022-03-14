@@ -97,9 +97,20 @@
 				vertical-align: middle;
 				background: url("../images/vk-icon.svg") no-repeat center center/contain;
 
+				&.lightning {
+					background-image: url("../images/lightning-icon.svg");	
+					width: 2.4rem;
+					height: 2.4rem;
+				}
+
 				@media (min-width: $md-min) {
 					width: 1.8rem;
 					height: 1.8rem;
+
+					&.lightning {
+						width: 2.2rem;
+						height: 2.2rem;
+					}
 				}
 			}
 		}

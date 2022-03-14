@@ -6,7 +6,7 @@
 			<span><i class="fas fa-glasses"></i>製品を見る</span>
 			<div class="vksgn-sub">
 				<ul class="vksgn-sub-items">
-					<li class="vksgn-sub-item"><a href="https://lightning.vektor-inc.co.jp/"><i class="fas fa-bolt"></i>Lightning</a></li>
+					<li class="vksgn-sub-item"><a href="https://lightning.vektor-inc.co.jp/"><i class="vk-icon lightning"></i>Lightning</a></li>
 					<li class="vksgn-sub-item"><a href="https://www.vektor-inc.co.jp/service/wordpress-plugins/vk-blocks/"><i class="vk-icon"></i>VK Blocks</a></li>
 					<li class="vksgn-sub-item"><a href="https://patterns.vektor-inc.co.jp/"><i class="vk-icon"></i>VK Pattern Library</a></li>
 					<li class="vksgn-sub-item"><a href="https://www.vektor-inc.co.jp/service/wordpress-plugins/vk-filter-search/"><i class="vk-icon"></i>VK Filter Search</a></li>
