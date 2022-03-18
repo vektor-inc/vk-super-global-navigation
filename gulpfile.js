@@ -1,29 +1,46 @@
-var gulp = require("gulp");
-var replace = require("gulp-replace");
+//プラグイン名
+const pluginName = ' vk-super-global-navigation';
 
+// モジュールをロード
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const uglify = require('gulp-uglify');
+
+// CSS をビルド
+gulp.task('build:css', (done) => {
+	gulp.src(`./src/_scss/*.scss`)
+		.pipe(
+			sass({ outputStyle: 'compressed' }).on('error', sass.logError)
+		)
+		.pipe(gulp.dest(`./build/css/`));
+	done();
+});
+
+// JS をビルド
+gulp.task('build:js', (done) => {
+	gulp.src(`./src/js/*.js`)
+		.pipe(uglify())
+		.pipe(gulp.dest(`./build/js/`));
+	done();
+});
+
+// 一気にビルド
+gulp.task('build', gulp.series('build:css', 'build:js')); 
+
+// ディストリビューションを作成
 gulp.task('dist', function (done) {
 	const files = gulp.src(
 	  [
-		'./**/*.php',
-		'./**/*.txt',
-		'./**/*.md',
-		'./**/*.css',
-		'./**/*.scss',
-		'./**/*.png',
 		'./inc/**',
-		'./assets/**',
-		'./icons/**',
+		'./vendor/**',
+		'./vk-super-global-navigation.php',
 		'./languages/**',
-		"./vendor/**",
-		"!./.vscode/**",
-		"!./bin/**",
-		"!./dist/**",
-		"!./node_modules/**/*.*",
-		"!./tests/**",
+		'!./node_mudules/**',
+		'!./tests/**',
 	  ], {
 		base: './'
 	  }
 	)
-	files.pipe(gulp.dest("dist/vk-super-global-navigation"));
+	files.pipe(gulp.dest(`dist/${pluginName}`));
 	done();
   });
