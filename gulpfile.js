@@ -1,5 +1,5 @@
 //プラグイン名
-const pluginName = ' vk-super-global-navigation';
+const pluginName = 'vk-super-global-navigation';
 
 // モジュールをロード
 const gulp = require('gulp');
