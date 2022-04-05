@@ -11,7 +11,8 @@
 		background: #333;
 		font-size: .8rem;
 		position: relative;
-		 @include pie-clearfix;
+		z-index: 2001; // for katawara
+		@include pie-clearfix;
 
 		@media (min-width: $md-min) {
 			font-size: inherit;
