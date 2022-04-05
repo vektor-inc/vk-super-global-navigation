@@ -10,19 +10,20 @@
 		"build": "npx gulp build",
 		"dist": "composer install --no-dev && npx gulp dist && composer install",
 		"build:css": "sass --style=compressed --no-source-map src/_scss:build/css",
-		"watch": "nodemon -e scss --watch src/_scss -x \"npm run build:css\""
+		"watch": "nodemon -e scss --watch src/_scss -x \"npm run build:css\"",
+		"phpunit": "npx wp-env run phpunit \"phpunit -c /var/www/html/wp-content/plugins/vk-super-global-navigation/.phpunit.xml --testsuite default --verbose\""
 	},
 	"devDependencies": {
-		"@wordpress/env": "^4.2.0",
-		"@wordpress/icons": "^6.2.0",
-		"@wordpress/scripts": "^20.0.2",
+		"@wordpress/env": "^4.4.0",
+		"@wordpress/icons": "^8.1.0",
+		"@wordpress/scripts": "^22.3.0",
 		"gulp": "^4.0.2",
 		"gulp-sass": "^5.1.0",
 		"gulp-uglify": "^3.0.2",
-		"npm-check-updates": "^12.2.1",
+		"npm-check-updates": "^12.5.7",
 		"po2json": "^1.0.0-beta-3",
-		"sass": "^1.49.7",
-		"nodemon": "^2.0.12",
+		"sass": "^1.49.11",
+		"nodemon": "^2.0.15",
 		"watch": "^1.0.2"
 	}
 }
