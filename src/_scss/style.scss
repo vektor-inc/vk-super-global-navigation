@@ -143,14 +143,18 @@
 		}
 
 		&-title {
-			a {
+			a,
+			span {
 				display: block;
 				padding-top: 1rem;
-				text-decoration: underline;
 		
 				@media (min-width: $md-min) {
 					padding-top: 1.6rem;
 				}		
+			}
+
+			a {
+				text-decoration: underline;
 			}
 
 			.fas,
