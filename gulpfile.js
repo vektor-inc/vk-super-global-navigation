@@ -32,7 +32,6 @@ gulp.task('dist', function (done) {
 	const files = gulp.src(
 	  [
 		'./inc/**',
-		'./vendor/**',
 		'./vk-super-global-navigation.php',
 		'./languages/**',
 		'!./node_mudules/**',
