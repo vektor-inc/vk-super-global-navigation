@@ -9,7 +9,11 @@
 		"squizlabs/php_codesniffer": "*",
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
 		"phpcompatibility/phpcompatibility-wp": "*",
-		"wp-coding-standards/wpcs": "*"
+		"wp-coding-standards/wpcs": "*",
+		"yoast/phpunit-polyfills": "^1.0"
+	},
+	"require": {
+		"yahnis-elsts/plugin-update-checker": "^4.11"
 	},
 	"license": "gpl",
 	"authors": [

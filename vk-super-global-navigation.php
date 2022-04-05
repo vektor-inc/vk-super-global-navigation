@@ -15,6 +15,17 @@
  * @package VK Super Global Navigation
  */
 
+// Composer のファイルを読み込み ( composer install --no-dev )
+require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+
+// Update Checker
+$my_update_checker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/vektor-inc/vk-super-global-navigation',
+	__FILE__,
+	'vk-super-global-navigation'
+);
+$my_update_checker->getVcsApi()->enableReleaseAssets();
+$my_update_checker->setAuthentication('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');
 /**
 * Start the plugin
 */
