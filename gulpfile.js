@@ -1,5 +1,5 @@
 //プラグイン名
-const pluginName = ' vk-super-global-navigation';
+const pluginName = 'vk-super-global-navigation';
 
 // モジュールをロード
 const gulp = require('gulp');
@@ -31,10 +31,11 @@ gulp.task('build', gulp.series('build:css', 'build:js'));
 gulp.task('dist', function (done) {
 	const files = gulp.src(
 	  [
-		'./inc/**',
+		'./build/**',
 		'./vendor/**',
+		'./readme.txt',
 		'./vk-super-global-navigation.php',
-		'./languages/**',
+		'./vksgn-template.php',
 		'!./node_mudules/**',
 		'!./tests/**',
 	  ], {
