@@ -1,6 +1,11 @@
 <div class="vksgn-navigation<?php 
 	if( wp_is_mobile()){ echo ' is_mobile'; }
-	if( $GLOBALS['vk_super_global_navigation']->is_dark()){echo ' is_dark';}
+
+	$domain = $_SERVER['HTTP_HOST'];
+	if( strpos( $domain, 'pattern' ) !== false ){
+		// Pattern Library
+		echo ' is_dark';
+	}
 ?>">
 	<ul class="vksgn-primary">
 		<li class="vksgn-primary-item product">
