@@ -69,12 +69,6 @@ class VKSGN_Active {
 	* is dark background
 	*/
 	function is_dark() {
-		$domain = $_SERVER['HTTP_HOST'];
-		if( strpos( $domain, 'pattern' ) !== false ){
-			// Pattern Library
-			return true;
-		}
-
 		return false;
 	}
 }
