@@ -60,7 +60,7 @@ class VKSGN_Active {
 	/**
 	* Add script file
 	*/
-	function add_script() {
+	static function add_script() {
 		$filename = plugin_dir_url( __FILE__ ).'build/js/script.js';
 		wp_enqueue_script( 'vk-super-global-navigation', $filename, array( 'jquery' ), '1.0.2' );
 	}

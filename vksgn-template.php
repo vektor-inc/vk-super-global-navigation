@@ -2,7 +2,7 @@
 
 <div class="vksgn-navigation<?php 
 	if( wp_is_mobile()){ echo ' is_mobile'; }
-	if( $vk_super_global_navigation->is_dark()){echo ' is_dark';}
+	if( $vk_super_global_navigation::is_dark()){echo ' is_dark';}
 ?>">
 	<ul class="vksgn-primary">
 		<li class="vksgn-primary-item product">
