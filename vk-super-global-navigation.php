@@ -64,6 +64,19 @@ class VKSGN_Active {
 		$filename = plugin_dir_url( __FILE__ ).'build/js/script.js';
 		wp_enqueue_script( 'vk-super-global-navigation', $filename, array( 'jquery' ), '1.0.2' );
 	}
+
+	/**
+	* is dark background
+	*/
+	function is_dark() {
+		$domain = $_SERVER['HTTP_HOST'];
+		if( strpos( $domain, 'pattern' ) !== false ){
+			// Pattern Library
+			return true;
+		}
+
+		return false;
+	}
 }
 $vk_super_global_navigation = new VKSGN_Active();
 ?>
