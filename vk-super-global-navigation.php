@@ -70,7 +70,7 @@ class VKSGN_Active {
 	*/
 	public function is_dark() {
 		$domain = $_SERVER['HTTP_HOST'];
-		if( strpos( $domain, 'pattern' ) !== false ){
+		if( strpos( $domain, 'localpattern' ) !== false ){
 			// Pattern Library
 			return true;
 		}
@@ -78,5 +78,5 @@ class VKSGN_Active {
 		return false;
 	}
 }
-$vk_super_global_navigation = new VKSGN_Active();
+$GLOBALS['vk_super_global_navigation'] = new VKSGN_Active();
 ?>
