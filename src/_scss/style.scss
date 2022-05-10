@@ -14,6 +14,10 @@
 		z-index: 2001; // for katawara
 		@include pie-clearfix;
 
+		&.is_dark {
+			background: #222;
+		}
+
 		@media (min-width: $md-min) {
 			font-size: inherit;
 		}
@@ -71,10 +75,6 @@
 					border-left: solid 1px #999;
 				}
 			}
-
-			.ksgn-has-sub {
-				display: none;
-			}
 		}
 
 		.fas,
@@ -95,7 +95,7 @@
 			.vk-icon {
 				width: 2rem;
 				height: 2rem;
-				vertical-align: middle;
+				vertical-align: bottom;
 				background: url("../images/vk-icon.svg") no-repeat center center/contain;
 
 				&.lightning {
@@ -141,7 +141,8 @@
 
 		@media (min-width: $md-min) {
 			padding: 1.6rem;
-		}
+			font-size: inherit;
+			}
 
 		&-title {
 			a,
@@ -187,6 +188,11 @@
 			border-left: solid 1px #fff;
 			border-bottom: solid 1px #fff;
 			
+			span {
+				display: block;
+				font-size: 0.76em;
+			}
+
 			&:hover {
 				background-color: #333;
 			}
@@ -198,12 +204,6 @@
 			a {
 				display: block;
 				padding: 1rem 0;
-
-				@media (min-width: $md-min) {
-					@include display-flex();
-					@include flex-justify-center();
-					@include  flex-center();
-				}
 			}
 
 			br {

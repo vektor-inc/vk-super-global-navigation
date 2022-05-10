@@ -26,3 +26,23 @@ $ npm run watch
 
 ## develop branch
 develop ブランチに push すると自動でテストサーバー https://vk-block-test.vs4.nagoya/ にデプロイされます。
+
+## 利用中のサイト
+スーパーグローバルメニューは下記サイトに導入されています。
+
+### 主要なサービス
+* [コーポレート](https://www.vektor-inc.co.jp/)
+* [ベクトレ](https://training.vektor-inc.co.jp/)
+* [パターンライブラリ](https://patterns.vektor-inc.co.jp/)
+* [VWS](https://vws.vektor-inc.co.jp/)
+* [Lightning](https://lightning.vektor-inc.co.jp/)
+
+### デモサイト
+* [Lightning G3](https://demo.dev3.biz/lightning-g3/)
+* [Lightning + Pro機能](https://demo.dev3.biz/lightning-g3-pro/)
+* [Lightning + Pro機能（法律事務所）](https://demo.dev3.biz/law/)
+* [Lightning + Pro機能（学習塾）](https://demo.dev3.biz/cramschool/)
+* [Lightning + Pro機能（訪問介護サービス）](https://demo.dev3.biz/cramschool/)
+* [Lightning + Pro機能（採用情報）](https://demo.dev3.biz/recruit/)
+* [和風デザイン vekuan](https://demo.dev3.biz/vekuan/)
+* [あえて背景をずらしたデザイン Evergreen](https://demo.dev3.biz/evergreen/)
