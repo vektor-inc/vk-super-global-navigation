@@ -26,14 +26,14 @@
 			<span><i class="fas fa-users"></i>参加する</span>
 			<div class="vksgn-sub">
 				<ul class="vksgn-sub-items">
-					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/"><i class="fas fa-chalkboard-teacher"></i>VWS<br>
+					<li class="vksgn-sub-item"><a href="https://vektor.connpass.com/"><i class="fas fa-chalkboard-teacher"></i>VWS<br>
 					オンライン勉強会</a></li>
 					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/vws-community"><i class="fab fa-slack"></i>VWS<br>
 					ユーザーSlack</a></li>
 					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/forums"><i class="far fa-comments"></i>VWS<br>
 					フォーラム</a></li>
 				</ul>
-				<div class="vksgn-sub-title"><span> オンラインコミュニティ一覧<i class="fas fa-chevron-right"></i></span></div>
+				<div class="vksgn-sub-title"><a href="https://vws.vektor-inc.co.jp/vws-community"> オンラインコミュニティ一覧<i class="fas fa-chevron-right"></i></a></div>
 			</div>
 		</li>
 		<li class="vksgn-primary-item"><a href="https://showcase.vektor-inc.co.jp/archives/author/wpmaster"><i class="fas fa-share-square"></i>実例を見る</a></li>
