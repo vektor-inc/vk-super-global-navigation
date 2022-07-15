@@ -18,6 +18,9 @@ VK footer menu for Vektor official site.
 == Screenshots ==
 
 == Changelog ==
+= 1.0.5 =
+[Fix] set url in vws
+
 = 1.0.4 =
 [Fix] add description in product item.
 
