@@ -26,7 +26,7 @@
 			<span><i class="fas fa-users"></i>参加する</span>
 			<div class="vksgn-sub">
 				<ul class="vksgn-sub-items">
-					<li class="vksgn-sub-item"><a href="https://vektor.connpass.com/"><i class="fas fa-chalkboard-teacher"></i>VWS<br>
+					<li class="vksgn-sub-item"><a href="https://vektor.connpass.com/" target="_blank"><i class="fas fa-chalkboard-teacher"></i>VWS<br>
 					オンライン勉強会</a></li>
 					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/vws-community"><i class="fab fa-slack"></i>VWS<br>
 					ユーザーSlack</a></li>
