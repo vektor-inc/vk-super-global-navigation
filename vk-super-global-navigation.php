@@ -37,7 +37,7 @@ class VKSGN_Active {
 	public function __construct() {
 		defined( 'ABSPATH' ) || exit;
 		add_filter( 'wp_footer', array( &$this, 'add_navigation' ));
-		add_action( 'wp_print_styles', array( &$this, 'add_style' ));
+		add_action( 'wp_enqueue_scripts', array( &$this, 'add_style' ));
 		add_action( 'wp_enqueue_scripts', array( &$this, 'add_script' ) );
 	}
 
