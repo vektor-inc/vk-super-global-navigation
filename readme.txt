@@ -19,7 +19,7 @@ VK footer menu for Vektor official site.
 
 == Changelog ==
 = 1.0.9 =
-[Fix] hover color in vk-pattern-library
+[Fix] fix X-T9 sticky footer
 
 = 1.0.8 =
 [Fix] hover color in vk-pattern-library
