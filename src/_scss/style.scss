@@ -232,3 +232,10 @@
 .ld-course-navigation {
 	margin-bottom: 80px
 }
+
+/**
+* fix X-T9 sticky footer
+*/
+html{
+	height: auto !important;
+}
