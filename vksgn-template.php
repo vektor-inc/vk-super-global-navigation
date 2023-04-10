@@ -28,8 +28,8 @@
 				<ul class="vksgn-sub-items">
 					<li class="vksgn-sub-item"><a href="https://vektor.connpass.com/" target="_blank"><i class="fas fa-chalkboard-teacher"></i>VWS<br>
 					オンライン勉強会</a></li>
-					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/vws-community"><i class="fab fa-discord"></i>VWS<br>
-					ユーザーDiscord</a></li>
+					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/vws-community"><i class="fab fa-slack"></i>VWS<br>
+					ユーザーSlack</a></li>
 					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/forums"><i class="far fa-comments"></i>VWS<br>
 					フォーラム</a></li>
 				</ul>
