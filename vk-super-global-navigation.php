@@ -54,7 +54,7 @@ class VKSGN_Active {
 	*/
 	static function add_style() {
 		$filename = plugin_dir_url( __FILE__ ) . 'build/css/style.css';
-		wp_enqueue_style( 'vk-super-global-navigation', $filename, false, '1.0.9' );
+		wp_enqueue_style( 'vk-super-global-navigation', $filename, false, '1.1.0' );
 	}
 
 	/**
