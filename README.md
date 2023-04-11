@@ -46,3 +46,4 @@ develop ブランチに push すると自動でテストサーバー https://vk-
 * [Lightning + Pro機能（採用情報）](https://demo.dev3.biz/recruit/)
 * [和風デザイン vekuan](https://demo.dev3.biz/vekuan/)
 * [あえて背景をずらしたデザイン Evergreen](https://demo.dev3.biz/evergreen/)
+* [サンプル工務店](https://demo.dev3.biz/architect/)
