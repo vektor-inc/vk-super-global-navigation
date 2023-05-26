@@ -18,6 +18,21 @@
 			background: #222;
 		}
 
+		&.is_demo {
+		}
+
+		.demosite_message {
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			display: inline-block;
+			background: #333;
+			padding: .5em;
+			margin: 0;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+
 		@media (min-width: $md-min) {
 			font-size: inherit;
 		}
