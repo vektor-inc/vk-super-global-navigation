@@ -14,27 +14,35 @@
 		z-index: 2001; // for katawara
 		@include pie-clearfix;
 
-		&.is_dark {
-			background: #222;
-		}
-
-		&.is_demo {
-		}
-
 		.demosite_message {
-			position: absolute;
-			bottom: 100%;
-			left: 0;
-			display: inline-block;
-			background: #333;
-			padding: .5em;
-			margin: 0;
-			border-top-left-radius: 10px;
-			border-top-right-radius: 10px;
+			display: none;
 		}
 
 		@media (min-width: $md-min) {
 			font-size: inherit;
+
+			&.is_demo .demosite_message {
+				display: inline-block;
+				position: absolute;
+				bottom: calc(100% - 1px);
+				left: 50%;
+				background: #333;
+				font-size: .8em;
+				padding: .5em 1em;
+				margin: 0;
+				line-height: 1;
+				white-space: nowrap;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);			
+			}
+		}
+
+		&.is_dark,
+		&.is_dark .demosite_message {
+			background: #222;
 		}
 
 		&,

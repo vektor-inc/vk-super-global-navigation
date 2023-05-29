@@ -7,9 +7,8 @@
 		echo ' is_dark';
 	}
 
-	//if( strpos( $domain, 'demo' ) !== false ){
-	if( strpos( $domain, '62' ) !== false ){
-		// Pattern Library
+	if( strpos( $domain, 'demo' ) || strpos( $domain, 'test') !== false ){
+		// Demo site
 		echo ' is_demo';
 	}
 ?>">
