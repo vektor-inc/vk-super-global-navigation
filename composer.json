@@ -13,7 +13,7 @@
 		"yoast/phpunit-polyfills": "^1.0"
 	},
 	"require": {
-		"yahnis-elsts/plugin-update-checker": "^4.11"
+		"yahnis-elsts/plugin-update-checker": "^5.1"
 	},
 	"license": "gpl",
 	"authors": [

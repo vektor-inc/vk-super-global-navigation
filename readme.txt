@@ -18,6 +18,10 @@ VK footer menu for Vektor official site.
 == Screenshots ==
 
 == Changelog ==
+
+[Update] Update Plugin Checker 5.1
+[Fix] Update Checker token setting
+
 = 1.1.2 =
 [Fix] add demo-site message
 

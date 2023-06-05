@@ -19,13 +19,13 @@
 require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
 // Update Checker
-$my_update_checker = Puc_v4_Factory::buildUpdateChecker(
+$my_update_checker = YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
 	'https://github.com/vektor-inc/vk-super-global-navigation',
 	__FILE__,
 	'vk-super-global-navigation'
 );
 $my_update_checker->getVcsApi()->enableReleaseAssets();
-$my_update_checker->setAuthentication('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');
+$my_update_checker->setAuthentication('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');
 /**
 * Start the plugin
 */
