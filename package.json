@@ -9,6 +9,7 @@
 		"start": "npm install && composer install && npx wp-env start",
 		"build": "npx gulp build",
 		"dist": "composer install --no-dev && npx gulp dist && composer install",
+		"zip": "rm -rf ./dist && composer install --no-dev && npx gulp dist && cd dist && zip -r vk-super-global-navigation.zip vk-super-global-navigation && cd ../ && composer install",
 		"build:css": "sass --style=compressed --no-source-map src/_scss:build/css",
 		"watch": "nodemon -e scss --watch src/_scss -x \"npm run build:css\"",
 		"phpunit": "npx wp-env run phpunit \"phpunit -c /var/www/html/wp-content/plugins/vk-super-global-navigation/.phpunit.xml --testsuite default --verbose\""
