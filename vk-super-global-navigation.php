@@ -25,7 +25,7 @@ $my_update_checker = Puc_v4_Factory::buildUpdateChecker(
 	'vk-super-global-navigation'
 );
 $my_update_checker->getVcsApi()->enableReleaseAssets();
-$my_update_checker->setAuthentication('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');
+$my_update_checker->setAuthentication('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');
 /**
 * Start the plugin
 */
