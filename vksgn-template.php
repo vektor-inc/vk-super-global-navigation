@@ -7,7 +7,7 @@
 		echo ' is_dark';
 	}
 
-	if( strpos( $domain, 'demo' ) || strpos( $domain, 'test') !== false ){
+	if( strpos( $domain, 'demo' ) !== false  || strpos( $domain, 'test') !== false ){
 		// Demo site
 		echo ' is_demo';
 	}
