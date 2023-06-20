@@ -4,7 +4,7 @@ Donate link:
 Tags:
 Requires at least: 5.9
 Tested up to: 5.9.0
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,9 @@ VK footer menu for Vektor official site.
 == Screenshots ==
 
 == Changelog ==
+
+= 1.1.4 =
+[Fix] check version no
 
 = 1.1.3 =
 [Update] Update Plugin Checker 5.1
