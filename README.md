@@ -47,3 +47,4 @@ develop ブランチに push すると自動でテストサーバー https://vk-
 * [和風デザイン vekuan](https://demo.dev3.biz/vekuan/)
 * [あえて背景をずらしたデザイン Evergreen](https://demo.dev3.biz/evergreen/)
 * [サンプル工務店](https://demo.dev3.biz/architect/)
+* [X-T9 フルサイト編集機能に対応した WordPress ブロックテーマ](https://x-t9.vektor-inc.co.jp/)
