@@ -19,6 +19,9 @@ VK footer menu for Vektor official site.
 
 == Changelog ==
 
+= 1.1.5 =
+[Fix] fix html closing tag
+
 = 1.1.4 =
 [Fix] check version no
 
