@@ -34,7 +34,7 @@ jobs:
               run: echo "##[set-output name=NODEVERSION;]$(cat .node-version)"
               id: nodenv
             - name: Setup Node.js (.node-version)
-              uses: actions/setup-node@v1
+              uses: actions/setup-node@v3
               with:
                   node-version: '${{ steps.nodenv.outputs.NODEVERSION }}'
             - name: Cache multiple paths
