@@ -9,3 +9,4 @@ Thumbs.db
 *.zip
 vendor/
 .wp-env.override.json
+.phpunit.result.cache
