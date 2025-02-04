@@ -3,7 +3,7 @@
 /**
 * public page css
 */
-@import "variables";
+@use "variables";
 
 //スーパーグローバルナビゲーション
 .vksgn {
@@ -12,13 +12,13 @@
 		font-size: .8rem;
 		position: relative;
 		z-index: 2001; // for katawara
-		@include pie-clearfix;
+		@include variables.pie-clearfix;
 
 		.demosite_message {
 			display: none;
 		}
 
-		@media (min-width: $md-min) {
+		@media (min-width: variables.$md-min) {
 			font-size: inherit;
 
 			&.is_demo .demosite_message {
@@ -69,7 +69,7 @@
 		padding: 0;
 		text-align: center;
 		flex-wrap: nowrap;
-		@include display-flex;
+		@include variables.display-flex;
 
 		&-item {
 			width: calc( 100% / 5 );
@@ -87,10 +87,10 @@
 				padding: 0.6rem 0;
 				cursor: pointer;
 
-				@media (min-width: $md-min) {
-					@include display-flex();
-					@include flex-justify-center();
-					@include  flex-center();
+				@media (min-width: variables.$md-min) {
+					@include variables.display-flex();
+					@include variables.flex-justify-center();
+					@include  variables.flex-center();
 				}
 			}
 
@@ -110,7 +110,7 @@
 			margin: 0 auto 5px;
 			font-size: 1.8rem;
 
-			@media (min-width: $md-min) {
+			@media (min-width: variables.$md-min) {
 				display: inline-block;
 				margin: 0 1rem 0 0;
 			}
@@ -129,7 +129,7 @@
 					height: 2.4rem;
 				}
 
-				@media (min-width: $md-min) {
+				@media (min-width: variables.$md-min) {
 					width: 1.8rem;
 					height: 1.8rem;
 
@@ -164,7 +164,7 @@
 		z-index: 100; // for .card-intext .card-intext-inner .vk_post_body in Lightning
 		transition: all .2s ease-out;
 
-		@media (min-width: $md-min) {
+		@media (min-width: variables.$md-min) {
 			padding: 1.6rem;
 			font-size: inherit;
 			}
@@ -175,7 +175,7 @@
 				display: block;
 				padding-top: 1rem;
 		
-				@media (min-width: $md-min) {
+				@media (min-width: variables.$md-min) {
 					padding-top: 1.6rem;
 				}		
 			}
@@ -201,7 +201,7 @@
 			border-radius: 5px;
 			overflow: hidden;
 			flex-wrap: wrap;
-			@include display-flex;
+			@include variables.display-flex;
 		}
 
 		&-item {
@@ -222,7 +222,7 @@
 				background-color: #333;
 			}
 
-			@media (min-width: $md-min) {
+			@media (min-width: variables.$md-min) {
 				width: calc( 100% / 4 );
 			}
 
@@ -232,7 +232,7 @@
 			}
 
 			br {
-				@media (min-width: $md-min) {
+				@media (min-width: variables.$md-min) {
 					display: none;
 					margin-right: .4rem;
 				}

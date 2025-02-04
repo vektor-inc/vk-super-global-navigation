@@ -12,7 +12,7 @@
 		echo ' is_demo';
 	}
 ?>">
-	<p class="demosite_message">このデモサイトは Vektor,Inc. のテーマとプラグインで構築されています。ご購入や詳細情報は下記のリンクもご参考ください。</o>
+	<p class="demosite_message">このデモサイトは Vektor,Inc. のテーマとプラグインで構築されています。ご購入や詳細情報は下記のリンクもご参考ください。</p>
 	<ul class="vksgn-primary">
 		<li class="vksgn-primary-item product">
 			<span><i class="fas fa-glasses"></i>製品を見る</span>
