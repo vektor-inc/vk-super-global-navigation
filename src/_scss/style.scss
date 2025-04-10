@@ -11,7 +11,7 @@
 		background: #333;
 		font-size: .8rem;
 		position: relative;
-		z-index: 2001; // for katawara
+		z-index: 10000; // for x-t9
 		@include variables.pie-clearfix;
 
 		.demosite_message {
