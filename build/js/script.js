@@ -1,1 +1,1 @@
-!function(n,i){n(i).ready(function(n){n(".vksgn-navigation.is_mobile .vksgn-primary-item").click(function(){n(this).has(".vksgn-sub").toggleClass("open"),n(this).siblings().removeClass("open")})})}(jQuery,document,window);
+((i,n)=>{i(n).ready(function(i){i(".vksgn-navigation.is_mobile .vksgn-primary-item").click(function(){i(this).has(".vksgn-sub").toggleClass("open"),i(this).siblings().removeClass("open")})})})(jQuery,document,window);
