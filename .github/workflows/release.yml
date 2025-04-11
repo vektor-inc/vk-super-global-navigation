@@ -34,7 +34,7 @@ jobs:
               with:
                   node-version: '${{ steps.nodenv.outputs.NODEVERSION }}'
             - name: Cache multiple paths
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: vendor
                   key: ${{ runner.os }}-php${{ matrix.php }}-${{ hashFiles('**/composer.lock') }}
@@ -90,7 +90,7 @@ jobs:
                   cd dist/ && zip -r ${{ env.plugin_name }}.zip ${{ env.plugin_name }}/ && mv ${{ env.plugin_name }}.zip ${GITHUB_WORKSPACE}
             - name: Create GitHub Release
               id: create_release
-              uses: actions/create-release@v3
+              uses: actions/create-release@v1
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
