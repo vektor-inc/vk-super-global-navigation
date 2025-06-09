@@ -43,8 +43,8 @@
 			<div class="vksgn-sub">
 				<ul class="vksgn-sub-items">
 					<li class="vksgn-sub-item"><a href="https://training.vektor-inc.co.jp/"><i class="fas fa-laptop-code"></i>無料オンライン<br>学習ベクトレ</a></li>
-					<li class="vksgn-sub-item"><a href="https://www.youtube.com/@VektorInc"><i class="fas fa-brands fa-youtube"></i>ベクトル公式 YouTube </a></li>
-					<li class="vksgn-sub-item"><a href="https://x.com/vektor_inc"><i class="fas fa-brands fa-square-x-twitter"></i>ベクトル<br>公式 X </a></li>
+					<li class="vksgn-sub-item"><a href="https://www.youtube.com/@VektorInc" target="_blank"><i class="fas fa-brands fa-youtube"></i>ベクトル公式 YouTube </a></li>
+					<li class="vksgn-sub-item"><a href="https://x.com/vektor_inc" target="_blank"><i class="fas fa-brands fa-square-x-twitter"></i>ベクトル<br>公式 X </a></li>
 				</ul>
 				<div class="vksgn-sub-title"><a href="https://www.vektor-inc.co.jp/product-update/">製品更新情報<i class="fas fa-chevron-right"></i></a></div>
 			</div>
