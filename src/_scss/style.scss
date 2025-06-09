@@ -109,7 +109,6 @@
 			display: block;
 			margin: 0 auto 5px;
 			font-size: 1.8rem;
-
 			@media (min-width: variables.$md-min) {
 				display: inline-block;
 				margin: 0 1rem 0 0;
@@ -129,6 +128,18 @@
 					height: 2.4rem;
 				}
 
+				&.x-t9 {
+					background-image: url("../images/x-t9.svg");	
+					width: 2.6rem;
+					height: 2.6rem;
+				}
+
+				&.fsi {
+					background-image: url("../images/fsi-site-logo-white.svg");	
+					width: 2.4rem;
+					height: 2.4rem;
+				}
+
 				@media (min-width: variables.$md-min) {
 					width: 1.8rem;
 					height: 1.8rem;
@@ -141,9 +152,18 @@
 			}
 		}
 	
-		.join {
+		.join,
+		.know {
 			.vksgn-sub-item {
 				width: calc( 100% / 3 );
+
+				@media (min-width: variables.$md-min) {
+					a {
+						@include variables.display-flex();
+						@include variables.flex-justify-center();
+						@include  variables.flex-center();
+					}
+				}
 			}
 		}
 	}
@@ -212,7 +232,7 @@
 			text-align: center;
 			border-left: solid 1px #fff;
 			border-bottom: solid 1px #fff;
-			
+
 			span {
 				display: block;
 				font-size: 0.76em;

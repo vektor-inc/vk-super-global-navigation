@@ -125,6 +125,16 @@
   width: 2.4rem;
   height: 2.4rem;
 }
+.vksgn-primary .product .vk-icon.x-t9 {
+  background-image: url("../images/x-t9.svg");
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.vksgn-primary .product .vk-icon.fsi {
+  background-image: url("../images/fsi-site-logo-white.svg");
+  width: 2.4rem;
+  height: 2.4rem;
+}
 @media (min-width: 768px) {
   .vksgn-primary .product .vk-icon {
     width: 1.8rem;
@@ -135,8 +145,23 @@
     height: 2.2rem;
   }
 }
-.vksgn-primary .join .vksgn-sub-item {
+.vksgn-primary .join .vksgn-sub-item,
+.vksgn-primary .know .vksgn-sub-item {
   width: 33.3333333333%;
+}
+@media (min-width: 768px) {
+  .vksgn-primary .join .vksgn-sub-item a,
+  .vksgn-primary .know .vksgn-sub-item a {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 .vksgn-sub {
   margin: 0;
