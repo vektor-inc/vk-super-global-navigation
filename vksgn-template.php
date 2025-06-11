@@ -21,7 +21,7 @@
 					<li class="vksgn-sub-item"><a href="https://vk-fullsite-installer.com/"><i class="vk-icon fsi"></i>VK FullSite Installer<span>サイト丸ごとインポート</span></a></li>
 					<li class="vksgn-sub-item"><a href="https://x-t9.vektor-inc.co.jp/"><i class="vk-icon x-t9"></i>X-T9<span>WordPress テーマ</span></a></li>
 					<li class="vksgn-sub-item"><a href="https://lightning.vektor-inc.co.jp/"><i class="vk-icon lightning"></i>Lightning<span>WordPress テーマ</span></a></li>
-					<li class="vksgn-sub-item"><a href="https://patterns.vektor-inc.co.jp/"><i class="vk-icon"></i>VK Pattern Library<span>コピペで使えるライブラリ</span></a></li>
+					<li class="vksgn-sub-item"><a href="https://patterns.vektor-inc.co.jp/"><i class="vk-icon patterns"></i>VK Pattern Library<span>コピペで使えるライブラリ</span></a></li>
 				</ul>
 				<div class="vksgn-sub-title"><a href="https://vk-fullsite-installer.com/site/">実例を見る<i class="fas fa-chevron-right"></i></a></div>
 			</div>
@@ -33,7 +33,7 @@
 					<li class="vksgn-sub-item"><a href="https://www.vektor-inc.co.jp/service/wordpress-plugins/vk-blocks/"><i class="vk-icon"></i>VK Blocks<span>ブロック拡張プラグイン</span></a></li>
 					<li class="vksgn-sub-item"><a href="https://www.vektor-inc.co.jp/service/wordpress-plugins/vk-filter-search/"><i class="vk-icon"></i>VK Filter Search<span>絞り込み検索プラグイン</span></a></li>
 					<li class="vksgn-sub-item"><a href="https://www.vektor-inc.co.jp/service/wordpress-plugins/vk-ab-testing/"><i class="vk-icon"></i>VK AB Testing<span>ABテスト機能プラグイン</span></a></li>
-					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/vektor-passport "><i class="vk-icon"></i>VVektor Passport<span>お得なオールインワンライセンス</span></a></li>
+					<li class="vksgn-sub-item"><a href="https://vws.vektor-inc.co.jp/vektor-passport "><i class="vk-icon"></i>Vektor Passport<span>お得なオールインワンライセンス</span></a></li>
 				</ul>
 				<div class="vksgn-sub-title"><a href="https://www.vektor-inc.co.jp/service/products/ ">製品一覧<i class="fas fa-chevron-right"></i></a></div>
 			</div>

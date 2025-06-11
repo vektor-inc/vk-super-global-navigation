@@ -4,7 +4,7 @@ Donate link:
 Tags:
 Requires at least: 5.9
 Tested up to: 5.9.0
-Stable tag: 1.1.8
+Stable tag: 1.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,9 +19,12 @@ VK footer menu for Vektor official site.
 
 == Changelog ==
 
+= 1.1.9 =
+[Fix] typo
+[change] patterns icon
+
 = 1.1.8 =
 [Fix] add vk fullsite installer
-
 
 = 1.1.7 =
 [Fix] z-index on x-t9
