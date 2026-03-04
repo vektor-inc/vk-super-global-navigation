@@ -5,7 +5,7 @@
  * Description:       ベクトルオフィシャルサイト用のスーパーグローバルメニューです。
  *  * Author:         Vektor,Inc.
  * Author URI:        https://www.vektor-inc.co.jp/
- * Version:           1.1.9
+ * Version:           1.1.10
  * Text Domain:       vk-super-global-navigation
  * Domain Path:       /languages/
  * License:           GPLv2 or later (license.txt)
