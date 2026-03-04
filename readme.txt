@@ -19,6 +19,8 @@ VK footer menu for Vektor official site.
 
 == Changelog ==
 
+[ Fix ] Compatible for Font Awesome 7
+
 = 1.1.9 =
 [Fix] typo
 [change] patterns icon
