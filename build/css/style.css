@@ -97,18 +97,18 @@
 .vksgn-primary-item:not(:first-child) > span {
   border-left: solid 1px #999;
 }
-.vksgn-primary .fas,
-.vksgn-primary .far,
-.vksgn-primary .fab,
+.vksgn-primary .fa-solid,
+.vksgn-primary .fa-regular,
+.vksgn-primary .fa-brands,
 .vksgn-primary .vk-icon {
   display: block;
   margin: 0 auto 5px;
   font-size: 1.8rem;
 }
 @media (min-width: 768px) {
-  .vksgn-primary .fas,
-  .vksgn-primary .far,
-  .vksgn-primary .fab,
+  .vksgn-primary .fa-solid,
+  .vksgn-primary .fa-regular,
+  .vksgn-primary .fa-brands,
   .vksgn-primary .vk-icon {
     display: inline-block;
     margin: 0 1rem 0 0;
@@ -204,9 +204,9 @@
 .vksgn-sub-title a {
   text-decoration: underline;
 }
-.vksgn-sub-title .fas,
-.vksgn-sub-title .far,
-.vksgn-sub-title .fab {
+.vksgn-sub-title .fa-solid,
+.vksgn-sub-title .fa-regular,
+.vksgn-sub-title .fa-brands {
   display: inline-block;
   margin-left: 1rem;
   font-size: 1rem;
