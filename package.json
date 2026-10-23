@@ -5,9 +5,6 @@
 	"author": "Vektor,Inc",
 	"license": "MIT",
 	"main": "gulpfile.js",
-	"volta": {
-		"node": "24.22.1"
-	},
 	"scripts": {
 		"start": "npm install && composer install && npx wp-env start",
 		"build": "npx gulp build",
