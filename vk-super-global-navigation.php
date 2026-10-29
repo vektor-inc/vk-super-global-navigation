@@ -25,7 +25,6 @@ $my_update_checker = YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateC
 	'vk-super-global-navigation'
 );
 $my_update_checker->getVcsApi()->enableReleaseAssets();
-$my_update_checker->setAuthentication('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');
 /**
 * Start the plugin
 */
