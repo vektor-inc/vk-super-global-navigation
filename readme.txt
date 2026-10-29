@@ -19,6 +19,8 @@ VK footer menu for Vektor official site.
 
 == Changelog ==
 
+[ Fix ] Removed the authentication setting from the update checker
+
 = 1.1.10 =
 [ Fix ] Compatible for Font Awesome 7
 
